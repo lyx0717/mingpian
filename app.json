@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/about/index",
-    "pages/list/index",
-    "pages/experience/index"
+    "pages/experience/index",
+    "pages/calendar/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -25,17 +25,27 @@
           "selectedIconPath": "res/icon/about.png"
         },
         {
-          "pagePath": "pages/list/index",
-          "text": "诗句",
+          "pagePath": "pages/experience/index",
+          "text": "推荐",
           "iconPath": "res/icon/list0.png",
           "selectedIconPath": "res/icon/list.png"
         },
         {
-          "pagePath": "pages/experience/index",
-          "text": "推荐",
+          "pagePath": "pages/calendar/index",
+          "text": "日历",
           "iconPath": "res/icon/book0.png",
           "selectedIconPath": "res/icon/book.png"
         }
       ]
+    },
+    "plugins": {
+      "calendar": {
+          "version": "1.1.3",
+          "provider": "wx92c68dae5a8bb046"
+      },
+      "weatherPlugin": {
+        "version": "1.0.2",
+        "provider": "wx60d306fd175fe556"
+      }
     }
 }

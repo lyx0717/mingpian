@@ -1,0 +1,16 @@
+.color{
+  background-color:#fff;
+  width:100%;
+}
+.calendar {
+    background-color: #fbff00;
+    padding-top: 10px;
+}
+.header {
+    font-size: large; /*修改了标题文字和按钮的大小*/
+    color: #000;   /*修改了标题文字和按钮的颜色*/
+}
+.board {
+    background-color: #dddcff;
+    color: white;
+}

@@ -1,0 +1,3 @@
+<view class="color">
+    <calendar cell-size="48" calendar-style="calendar" header-style="header" board-style="board" show-more-days="true" weeks-type="cn" lunar="true" active-type="square"/>
+</view>

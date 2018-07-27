@@ -12,6 +12,9 @@
                     <text>{{userInfo.nickName}}</text>
                 </view>
                 <view class="comp flex1">
+                    <image src="../../res/icon/profession_42x42.png"></image>  <text> {{userProfile.name}}</text>
+                </view>
+                <view class="comp flex1">
                     <image src="../../res/icon/profession.png"></image>  <text> {{userProfile.job}}</text>
                 </view>
                 <view class="loca flex1">
@@ -48,6 +51,7 @@
           <view  class="person-introduction-desc">
               <text>{{userProfile.introduction}}</text>
           </view>
+          <button class="m-t-20" type="primary" size='mini' open-type="getUserInfo" bindgetuserinfo="callPhone">call me</button>
       </view>
   </view>
 </view>
