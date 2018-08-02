@@ -73,9 +73,9 @@ App({
   //     })
   //   }
   // },
-  globalData:{
-    userInfo: null
-  }
+  // globalData:{
+  //   userInfo: null
+  // }
 })
 
 // 获取token地址

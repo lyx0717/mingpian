@@ -2,7 +2,8 @@
   "pages":[
     "pages/about/index",
     "pages/experience/index",
-    "pages/calendar/index"
+    "pages/calendar/index",
+    "pages/systemInfo/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -35,6 +36,12 @@
           "text": "日历",
           "iconPath": "res/icon/book0.png",
           "selectedIconPath": "res/icon/book.png"
+        },
+        {
+          "pagePath": "pages/systemInfo/index",
+          "text": "设备信息",
+          "iconPath": "res/icon/wechat.png",
+          "selectedIconPath": "res/icon/wechat.png"
         }
       ]
     },

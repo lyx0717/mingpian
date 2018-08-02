@@ -21,13 +21,6 @@ Page({
       github:'https://github.com/lyx0717',
       introduction:'欢迎来到我的个人名片！'
     },
-    mobileInfo: {
-      model:'', // 手机型号
-        pixelRatio: '', // 设备像素比
-        language: '', // 微信设置语言
-        version: '', // 微信版本
-        platform: '', // 客户端平台
-    }
   },
 
   /**
@@ -47,8 +40,6 @@ Page({
     //     showViewFlag: true
     //   })
     // })
-    // this.getSprit();
-    this.getSystemInfo();
   },
   onShareAppMessage: function () {
     return {
@@ -62,43 +53,6 @@ Page({
       }
     }
   },
-
-  // 获取微信运动信息
-getSprit: function () {
-  wx.getWeRunData({
-    success(res) {
-      const encryptedData = res.encryptedData
-      // console.log('解密前 data: ', res)
-    },
-    fail: function (res) {
-      wx.showModal({
-        title: '提示',
-        content: '开发者未开通微信运动，请关注“微信运动”公众号后重试',
-        showCancel: false,
-        confirmText: '知道了'
-      })
-    }
-  })
-},
-
-// 获取设备信息
-getSystemInfo: function () {
-  try {
-    // 获取设备信息
-    wx.getSystemInfo({
-      success: function(res) {
-        // console.log(res, '设备')
-      }
-    })
-    wx.onCompassChange(function (res) {
-      // console.log(res.direction, '罗盘')
-    })
-    var res = wx.getSystemInfoSync()
-    // console.log(res);
-  } catch (e) {
-    // Do something when catch error
-  }
-},
 
 // 绑定input 
 bindKeyInput: function(e) {
@@ -142,7 +96,6 @@ callPhone: function () {
         showViewFlag: true
       })
     }
-    // console.log(e.detail.errMsg)
     // console.log(e.detail.userInfo)
     // console.log(e.detail.rawData)
   },

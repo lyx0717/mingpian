@@ -1,0 +1,16 @@
+<view class="w-100 p-20 bg-c">
+  <view class="w-100">
+    <text>当前网络类型：{{networkType}}</text>
+  </view>
+  <view class="w-100">
+    <text>wifi列表:</text>
+  </view>
+  <view class="w-100 h-80 overflow-s m-t-20">
+    <view wx:for="{{wifiLists}}" wx:for-item="i" wx:key="*this">
+      <view>WiFi名字：<text class="c-888">{{i.SSID}}</text></view>
+      <view>是否安全：<text class="c-888">{{i.secure? '安全':'不安全'}}</text></view>
+      <view>信号强度：<text class="c-888">{{i.signalStrength}}</text></view>
+      <view></view>
+    </view>
+  </view>
+</view>
